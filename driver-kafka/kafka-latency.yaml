@@ -29,10 +29,10 @@ topicConfig: |
   min.insync.replicas=2
 
 commonConfig: |
-  bootstrap.servers=localhost:9092
+  bootstrap.servers=10.10.1.1:9092
 
 producerConfig: |
-  acks=all
+  acks=1
   linger.ms=1
   batch.size=131072
 
