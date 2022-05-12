@@ -33,7 +33,9 @@ public class TestResult {
     public int consumersPerTopic;
 
     public List<Double> publishRate = new ArrayList<>();
+    public List<Double> publishThroughput = new ArrayList<>();
     public List<Double> consumeRate = new ArrayList<>();
+    public List<Double> consumeThroughput = new ArrayList<>();
     public List<Long> backlog = new ArrayList<>();
 
     public List<Double> publishLatencyAvg = new ArrayList<>();
@@ -46,6 +48,8 @@ public class TestResult {
     public List<Double> publishLatencyMax = new ArrayList<>();
 
     public double aggregatedPublishLatencyAvg;
+    public double aggregatedPublishLatencyMin;
+    public double aggregatedPublishLatency25pct;
     public double aggregatedPublishLatency50pct;
     public double aggregatedPublishLatency75pct;
     public double aggregatedPublishLatency95pct;
@@ -71,6 +75,8 @@ public class TestResult {
     public Map<Double, Double> aggregatedEndToEndLatencyQuantiles = new TreeMap<>();
 
     public double aggregatedEndToEndLatencyAvg;
+    public double aggregatedEndToEndLatencyMin;
+    public double aggregatedEndToEndLatency25pct;
     public double aggregatedEndToEndLatency50pct;
     public double aggregatedEndToEndLatency75pct;
     public double aggregatedEndToEndLatency95pct;
