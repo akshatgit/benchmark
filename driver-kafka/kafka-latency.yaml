@@ -26,7 +26,7 @@ replicationFactor: 5
 reset: true
 
 topicConfig: |
-  min.insync.replicas=2
+  min.insync.replicas=3
 
 commonConfig: |
   bootstrap.servers=10.10.1.1:9092
